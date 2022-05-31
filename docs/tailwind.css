@@ -515,18 +515,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -548,11 +536,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 @media (min-width: 768px) {

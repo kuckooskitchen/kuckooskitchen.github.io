@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "npm run tailwind && npm run serve",
     "serve": "node index",
-    "tailwind": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./public/tailwind.css",
-    "watch": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./public/tailwind.css --watch",
+    "tailwind": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./docs/tailwind.css",
+    "watch": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./docs/tailwind.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
