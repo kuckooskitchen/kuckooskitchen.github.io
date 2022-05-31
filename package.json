@@ -1,0 +1,22 @@
+{
+  "name": "kuckoos-kitchen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run tailwind && npm run serve",
+    "serve": "node index",
+    "tailwind": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./public/tailwind.css",
+    "watch": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./public/tailwind.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
