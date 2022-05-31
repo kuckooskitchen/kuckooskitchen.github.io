@@ -5,10 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npm run tailwind && npm run serve",
+    "dev": "npm run serve & npm run tailwind",
     "serve": "node index",
-    "tailwind": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./docs/tailwind.css",
-    "watch": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./docs/tailwind.css --watch",
+    "tailwind": "npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./docs/tailwind.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
