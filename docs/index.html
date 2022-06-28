@@ -17,28 +17,53 @@
         font-style: normal;
       }
 
-      .my-font-pixel {
+      @font-face {
+        font-family: 'pixel2';
+        src: url('pixel2.woff') format('woff'),
+            url('pixel2.woff2') format('woff2'),
+            url('pixel2.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1 {
         font-family: pixel;
       }
     </style>
   </head>
 
-  <body class="bg-cyan-400 pt-5">
+  <body class="bg-sky-200 pt-5">
     <div class="max-w-lg mx-auto overflow-hidden md:max-w-4xl">
       <div class="md:flex">
         <div class="flex items-center justify-center">
           <img class="max-w-xs w-52 md:w-48 object-cover md:h-full" src="logo.gif" alt="Man looking at item at a store">
         </div>
         <div class="p-5">
-          <h1 class="block mt-1 text-5xl leading-tight font-medium text-black text-center my-font-pixel">
+          <h1 class="block mt-1 text-5xl leading-tight font-medium text-black text-center">
             Kuckoo's Kitchen
           </h1>
-          <p class="mt-2 text-lg text-center font-bold text-pink-800">Homemade Indian Cuisine</p>
+          <h2 class="mt-2 text-4xl text-center text-pink-800">Homemade Indian Cuisine</h2>
         </div>
       </div>
     </div>
-    <div class="max-w-md mx-auto overflow-hidden md:max-w-2xl p-8">
-      <div class="md:flex">
+    <div class="max-w-md mx-auto overflow-hidden md:max-w-2xl relative">
+      <div class="flex items-center flex-wrap relative">
+        <div>
+          <img class="md:w-48" src="dish.gif">
+        </div>
+        <div class="p-8">
+          <h3 class="flex-1 text-4xl">Chicken Masala Curry</h3>
+          <p class="text-2xl w-48">A sweet, wonderful curry dish for you to enjoy very much.</p>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap absolute top-0">
+        <div>
+          <img class="md:w-48" src="bowl.gif">
+        </div>
+        <div class="p-8">
+          <h3 class="flex-1 text-4xl">Chicken Masala Curry</h3>
+          <p class="text-2xl w-48">A sweet, wonderful dish curry for you to enjoy very much.</p>
+        </div>
       </div>
     </div>
   </body>
