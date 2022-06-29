@@ -480,6 +480,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -509,22 +517,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -541,20 +533,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 28rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -575,16 +571,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.bg-cyan-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.bg-sky-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
 .bg-sky-200 {
@@ -618,11 +604,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -635,10 +616,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .leading-tight {
@@ -656,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:right-3 {
+    right: 0.75rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -676,7 +657,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 42rem;
   }
 
-  .md\:flex-1 {
-    flex: 1 1 0%;
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:right-3 {
+    right: 0.75rem;
   }
 }
