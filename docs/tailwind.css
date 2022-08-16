@@ -522,14 +522,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 12rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
 .w-52 {
   width: 13rem;
 }
@@ -598,6 +590,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -625,14 +622,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
